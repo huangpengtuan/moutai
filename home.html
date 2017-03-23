@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html" />
+<!-- 指定以最新的IE版本模式来显示网页 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对360浏览器的内核调用,强制调用极速模式 -->
+<meta name="renderer" content="webkit" />
+<!--[if lt IE 10]>
+<meta name="renderer" content="ie-stand" />
+<![endif]-->
+<!--[if !IE]>
+<meta name="renderer" content="ie-stand" />
+<!<![endif]-->
+<!--[if lt IE 9]>
+      <script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<!-- 确保设备能正常显示响应式页面 -->
+<!-- 告诉webkit内核浏览器初始缩放比例为1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- 判断浏览器版本.IE8以下版本,bootstrap支持不了.加个提示 -->
+<!--[if IE]>      
+        <!--[if IE 6]>
+            <div class="ie"></div>
+        <![endif]-->
+  <!-- 判断浏览器版本IE6以下版本 -->
+  <!--[if lt IE 6]> 
+             <div class="ie"></div>
+        <![endif]-->
+  <!--[if IE 7]>
+             <div class="ie"></div>
+        <![endif]-->
+<![endif]-->
+<!-- 百度等搜索,会把description显示在搜索结果里面.这个地方非常总要.但要注意不要超过150字符 -->
+<meta name="description" content="百度等搜索,会把description显示在搜索结果里面.这个地方非常总要.但要注意不要超过150字符">
+<meta name="author" content="lijiancong,1430004183@qq.com"/>
+<meta name="copyright" content="globalexibit"/>
+<!-- 关于文档的关键字标签 -->
+<meta name="keywords" content="关于文档的关键字标">
+<title>家居用品</title>
+<!-- normalize -->
+<!-- <link href="css/normalize.css" rel="stylesheet"> -->
+<!-- bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- 更换第三方图标库,Font Awesome <i class="fa fa-medium">-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- 项目css -->
+<link href="css/index.css" rel="stylesheet">
+</head>
+
+
+<body>
+<!-- 顶部logo，搜索区 -->
+<header class="home clearfix">
+  <div class="head center-block clearfix">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="" class="hidden-xs">
+        <img src="images/logo_2.png" alt="" class="visible-xs">
+      </a>
+    </div>
+    <div class="search-box">
+      <div class="search-tab">
+      <!-- Single button -->
+      <div class="btn-group">
+        <input type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="活动">
+        <span class="caret"></span>
+        <ul class="dropdown-menu">
+          <li><a href="#">活动</a></li>
+          <li><a href="#">品牌</a></li>
+        </ul>
+      </div>
+      </div>
+      <input type="text" class="keywords">
+      <input type="button" class="search-btn" value="搜索"> 
+    </div>
+    <div class="scanner-phone hidden-xs">
+      <img src="images/scanner.png" alt="">
+      <p>手机逛茅台</p>
+    </div>
+    <div class="top-nav hidden-xs">
+      <div class="all-product">
+        <a href="#">           
+        <span>数码产品分类</span></a>
+      </div>
+      <div class="top-agent">
+        <ul>
+          <li>
+            <a href="#">摄影摄像</a>
+          </li>
+          <li>
+            <a href="#">电脑整机</a>
+          </li>
+          <li>
+            <a href="#">智能设备</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="line"></div>
+</header>
+<!-- 导航,banner区,活动 -->
+<section class="home digital clearfix">
+  <div class="top clearfix">
+    <!-- 导航 -->
+    <div class="nav-content clearfix">
+      <nav class="nav clearfix">
+        <ul>          
+          <li class="item">
+            <a href="#">
+              <img src="images/icon_24.png" alt="" class="img-responsive visible-xs">
+              <span>家纺</span>
+
+            </a>
+            <span class="hidden-xs">&gt;</span>
+            <p class="little-links">
+              <a href="#">单反相机</a>
+              <a href="#">数码相机</a>
+              <a href="#">拍立得</a>
+            </p>
+          </li>
+          <li class="item">
+            <a href="#">
+              <img src="images/icon_25.png" alt="" class="img-responsive visible-xs">
+              <span>收纳用品</span>
+            </a>
+            <span class="hidden-xs">&gt;</span>
+            <p class="little-links">
+              <a href="#">电视</a>
+              <a href="#">客厅空调</a>
+              <a href="#">冰箱</a>
+            </p>
+          </li>
+          <li class="item">
+            <a href="#">
+              <img src="images/icon_26.png" alt="" class="img-responsive visible-xs">
+              <span>生活日用</span>
+            </a>
+            <span class="hidden-xs">&gt;</span>
+            <p class="little-links">
+              <a href="#">电视</a>
+              <a href="#">客厅空调</a>
+              <a href="#">冰箱</a>
+            </p>
+          </li>
+          <li class="item">
+            <a href="#">
+              <img src="images/icon_27.png" alt="" class="img-responsive visible-xs">
+              <span>家装软饰</span>
+            </a>
+            <span class="hidden-xs">&gt;</span>
+            <p class="little-links">
+              <a href="#">电视</a>
+              <a href="#">客厅空调</a>
+              <a href="#">冰箱</a>
+            </p>
+          </li>
+          <li class="item">
+            <a href="#">
+              <img src="images/icon_28.png" alt="" class="img-responsive visible-xs">
+              <span>灯具照明</span>
+            </a>
+            <span class="hidden-xs">&gt;</span>
+            <p class="little-links">
+              <a href="#">电视</a>
+              <a href="#">客厅空调</a>
+              <a href="#">冰箱</a>
+            </p>
+          </li>
+        </ul>
+      </nav>
+      <div class="dorpdown-cotent clearfix">
+        <div class="dorpdown-layer">
+          <div class="category-item">
+            <div class="subitems">
+              <p class="fore">
+                 <a href="#">冰箱</a>
+                |<a href="#">电视</a>
+                |<a href="#">洗衣机</a>
+                |<a href="#">电脑</a>
+                |<a href="#">电视</a>
+                |<a href="#">洗衣机</a>
+                |<a href="#">电脑</a>
+                |<a href="#">电视</a>
+                |<a href="#">洗衣机</a>
+                |<a href="#">电脑</a>
+                |<a href="#">电视</a>
+                |<a href="#">洗衣机</a>
+                |<a href="#">电脑</a>
+              </p>
+            </div>
+          </div>
+          <div class="item-brands">
+            <a href="#">
+              <img src="images/inner_banner_1.png" class="img-responsive" alt="">
+            </a>
+            <a href="#">
+              <img src="images/inner_banner_2.png" class="img-responsive" alt="">
+            </a>
+            <a href="#">
+              <img src="images/inner_banner_3.png" class="img-responsive" alt="">
+            </a>
+          </div>
+        </div>
+      </div>      
+    </div>
+    
+    <!-- banner -->
+    <div id="carousel-example-generic" class="banner carousel slide clearfix" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/banner_6.jpg" alt="..." class="img-responsive">
+        </div>
+        <div class="item">
+          <img src="images/banner_6.jpg" alt="..." class="img-responsive">
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <!-- 家纺展示 -->
+  <div class="product-area clearfix">
+    <p class="content-title">
+      <span></span>
+      <span class="content-name">
+        家纺展示
+      </span>
+      <span class="more hidden-xs"><a href="#">更多&nbsp;&nbsp;&gt;&gt;</a></span>
+    </p>
+    <div class="line"></div>
+    <div class="product-content clearfix">
+      <div class="left-box clearfix hidden-xs">
+        <div class="big-box">
+            <a href="#">
+              <img src="images/img_8.jpg" alt="">
+            </a>
+        </div>
+        <div class="big-box">
+            <a href="#">
+              <img src="images/img_9.jpg" alt="">
+            </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 饰品展示 -->
+  <div class="product-area clearfix">
+    <p class="content-title">
+      <span></span>
+      <span class="content-name">
+        饰品展示
+      </span>
+      <span class="more hidden-xs"><a href="#">更多&nbsp;&nbsp;&gt;&gt;</a></span>
+    </p>
+    <div class="line"></div>
+    <div class="product-content clearfix">
+      <div class="left-box clearfix hidden-xs">
+        <div class="big-box">
+            <a href="#">
+              <img src="images/img_8.jpg" alt="">
+            </a>
+        </div>
+        <div class="big-box">
+            <a href="#">
+              <img src="images/img_9.jpg" alt="">
+            </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 商品精选 -->
+  <div class="product-area essence clearfix hidden-xs">
+    <div class="line"></div>
+    <p class="content-title">
+      <span></span>商品精选
+      <span class="more hidden-xs"><a href="#">更多&nbsp;&nbsp;&gt;&gt;</a></span>
+    </p>
+    
+    <div class="product-content clearfix">
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+      <div class="product clearfix col-sm-3">
+        <div class="product-box">
+          <a href="#">
+            <img src="images/product_11.png" class="product-cover img-responsive" alt="">
+            <p class="product-name" >阿斯兰的健康爱神的箭</p>
+            <p class="product-price"><span>￥</span>5888.00</p>
+            
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="line"></div>
+  <div class="authentication hidden-xs">
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_1.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_2.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_3.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_4.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_5.png" alt="" class="err-product">
+    </a>
+  </div>
+  <div class="totop clearfix ">
+    <p class="hidden-xs"><a href="help.html" target="_blank">关于我们</a></p>
+    <p class="hidden-xs"><a href="news.html" target="_blank">新闻中心</a></p>
+    <p><a href="help.html" target="_blank">帮助中心</a></p>
+    <p><a href="#" target="_blank">网站地图</a></p>
+    <p><a href="#" target="_blank">法律声明</a></p>
+    <p><a href="help.html" target="_blank">联系我们</a></p>
+  </div>  
+  <div class="links hidden-xs">
+    <p>
+      <span>公司地址：广东省深圳市宝安区西乡兴业路友情基地8f</span>
+      <span>电话：0755-33075352</span>
+    </p>
+    <p>
+      <span>Copyright © 2004-2015  金合治(深圳)科技有限公司版权所有</span>
+      <span>工商执照编号11010254636</span>
+    </p>
+    <p><span>粤ICP备：132523号-1，粤ICP证13523号</span></p>
+  </div>  
+  <div class="copyright text-center visible-xs">
+    <p>Copyright:©2015handyshow.com</p>
+  </div>
+</footer>
+
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/ie-emulation-modes-warning.js"></script>
+<!-- 对IE低版本的一个小技巧.禁止在IE模式下,直接本地文件浏览 -->
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+</body>
+</html>

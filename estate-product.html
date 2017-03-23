@@ -1,0 +1,579 @@
+<!doctype html> 
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html" />
+<!-- 指定以最新的IE版本模式来显示网页 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对360浏览器的内核调用,强制调用极速模式 -->
+<meta name="renderer" content="webkit" />
+<!--[if lt IE 10]>
+<meta name="renderer" content="ie-stand" />
+<![endif]-->
+<!--[if !IE]> 
+<meta name="renderer" content="ie-stand" />
+<!<![endif]-->
+<!--[if lt IE 9]>
+      <script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<!-- 确保设备能正常显示响应式页面 -->
+<!-- 告诉webkit内核浏览器初始缩放比例为1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- 判断浏览器版本.IE8以下版本,bootstrap支持不了.加个提示 -->
+<!--[if IE]>      
+        <!--[if IE 6]>
+            <div class="ie"></div>
+        <![endif]-->
+  <!-- 判断浏览器版本IE6以下版本 -->
+  <!--[if lt IE 6]> 
+             <div class="ie"></div>
+        <![endif]-->
+  <!--[if IE 7]>
+             <div class="ie"></div>
+        <![endif]-->
+<![endif]--> 
+<!-- 百度等搜索,会把description显示在搜索结果里面.这个地方非常总要.但要注意不要超过150字符 -->
+<meta name="description" content="百度等搜索,会把description显示在搜索结果里面.这个地方非常总要.但要注意不要超过150字符">
+<meta name="author" content="lijiancong,1430004183@qq.com"/>
+<meta name="copyright" content="globalexibit"/>
+<!-- 关于文档的关键字标签 -->
+<meta name="keywords" content="关于文档的关键字标">
+<title>房产页面</title>
+<!-- normalize -->
+<!-- <link href="css/normalize.css" rel="stylesheet"> -->
+<!-- bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- 更换第三方图标库,Font Awesome <i class="fa fa-medium">-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- 项目css -->
+<link href="css/index.css" rel="stylesheet">
+</head>
+
+
+<body>
+<!-- 顶部logo，搜索区 -->
+<header class="clearfix">
+  <div class="head center-block clearfix">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="" class="hidden-xs">
+        <img src="images/logo_2.png" alt="" class="visible-xs">
+      </a>
+    </div>
+    <div class="search-box">
+      <div class="search-tab">
+      <!-- Single button -->
+      <div class="btn-group">
+        <input type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" value="活动">
+        <span class="caret"></span>
+        <ul class="dropdown-menu">
+          <li><a href="#">活动</a></li>
+          <li><a href="#">品牌</a></li>
+        </ul>
+      </div>
+      </div>
+      <input type="text" class="keywords">
+      <input type="button" class="search-btn" value="搜索"> 
+    </div>
+    <div class="scanner-phone hidden-xs">
+      <img src="images/scanner.png" alt="">
+      <p>手机逛茅台</p>
+    </div>
+    <div class="top-nav hidden-xs">
+      <div class="all-product" id="drop-btn">
+        <a href="#">           
+        <span>全部商品分类</span></a>
+      </div>
+      <div class="top-agent">
+        <ul>
+          <li>
+            <a href="#">湖南地区运营商</a>
+          </li>
+          <li>
+            <a href="#">湖南地区运营商</a>
+          </li>
+          <li>
+            <a href="#">湖南地区运营商</a>
+          </li>
+        </ul>
+      </div>
+      <!-- 隐藏下拉二级菜单 -->
+      <!-- 导航 -->
+      <div id="drop-li" class="clearfix">
+        <div class="nav-content clearfix">
+          <nav class="nav clearfix">
+            <ul>          
+              <li class="item">
+                <a href="appliances.html ">
+                  <img src="images/icon_1.png" alt="" class="img-responsive visible-xs">
+                  <span>家用电器</span>
+                </a>
+                <span class="hidden-xs">&gt;</span>
+              </li>
+              <li class="item">
+                <a href="digital.html">
+                  <img src="images/icon_2.png" alt="" class="img-responsive visible-xs">
+                  <span>数码产品</span>
+                </a>
+                <span class="hidden-xs">&gt;</span>
+              </li>
+              <li class="item">
+                <a href="car.html">
+                  <img src="images/icon_3.png" alt="" class="img-responsive visible-xs">
+                  <span>汽车</span>
+                </a>
+                <span class="hidden-xs">&gt;</span>
+              </li>
+              <li class="item">
+                <a href="luxury.html">
+                  <img src="images/icon_4.png" alt="" class="img-responsive visible-xs">
+                  <span>奢侈品</span>
+                </a>
+                <span class="hidden-xs">&gt;</span>
+              </li>
+              <li class="item">
+                <a href="#">
+                  <img src="images/icon_5.png" alt="" class="img-responsive visible-xs">
+                  <span>家居用品</span>
+                </a>
+                <span class="hidden-xs">&gt;</span>
+              </li>
+              <li class="item">
+                <a href="house.html">
+                  <img src="images/icon_6.png" alt="" class="img-responsive visible-xs">
+                  <span>房产</span>
+                </a>
+                <span class="hidden-xs">&gt;</span>
+              </li>
+              <li class="item visible-xs">
+                <a href="activity.html">
+                  <img src="images/icon_7.png" alt="" class="img-responsive visible-xs">
+                  <span>活动中心</span>
+                </a>
+                <span class="hidden-xs">&gt;</span>
+              </li>
+              <li class="item visible-xs">
+                <a href="news.html">
+                  <img src="images/icon_8.png" alt="" class="img-responsive visible-xs">
+                  <span>新闻</span>
+                </a>
+                <span class="hidden-xs">&gt;</span>
+              </li>
+            </ul>
+          </nav>
+          <div class="dorpdown-cotent clearfix">
+            <div class="dorpdown-layer">
+              <div class="category-item">
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+              </div>
+              <div class="item-brands">
+                <a href="#">
+                  <img src="images/inner_banner_1.png" class="img-responsive" alt="">
+                </a>
+                <a href="#">
+                  <img src="images/inner_banner_2.png" class="img-responsive" alt="">
+                </a>
+                <a href="#">
+                  <img src="images/inner_banner_3.png" class="img-responsive" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="dorpdown-layer">
+              <div class="category-item">
+                <div class="subitems">
+                  <a href="#">客厅2</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅2</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+              </div>
+              <div class="item-brands">
+                <a href="#">
+                  <img src="images/inner_banner_1.png" class="img-responsive" alt="">
+                </a>
+                <a href="#">
+                  <img src="images/inner_banner_2.png" class="img-responsive" alt="">
+                </a>
+                <a href="#">
+                  <img src="images/inner_banner_3.png" class="img-responsive" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="dorpdown-layer">
+              <div class="category-item">
+                <div class="subitems">
+                  <a href="#">客厅3</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅3</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+                <div class="subitems">
+                  <a href="#">客厅</a>
+                  <p class="fore">
+                    |<a href="#">平板电视</a>
+                    |<a href="#">柜式空调</a>
+                    |<a href="#">冰箱</a>
+                  </p>
+                </div>
+              </div>
+              <div class="item-brands">
+                <a href="#">
+                  <img src="images/inner_banner_1.png" class="img-responsive" alt="">
+                </a>
+                <a href="#">
+                  <img src="images/inner_banner_2.png" class="img-responsive" alt="">
+                </a>
+                <a href="#">
+                  <img src="images/inner_banner_3.png" class="img-responsive" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>      
+    </div>
+     
+  </div>
+  <div class="line"></div>
+</header>
+<!-- 导航,banner区,活动，代理商 -->
+<section class="estate-pruduct clearfix">
+  <!-- 房产banner -->  
+  <div class="active-banner">
+    <img src="images/banner_estate.jpg" alt="" class="img-responsive">
+  </div>
+  <!-- 区域筛选 -->
+  <div class="area-select hidden-xs">
+    <div class="title">
+      <p>按区域</p>
+    </div>
+    <div class="select-box">
+      <div class="choice">
+        <span>区域：</span>
+        <ul class="clearfix">
+          <li><a href="#">不限</a></li>
+          <li><a href="#">南山</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">大鹏新区</a></li>
+        </ul>
+      </div>
+      <div class="choice">
+        <span>均价：</span>
+        <ul>
+          <li><a href="#">不限</a></li>
+          <li><a href="#">南山</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">大鹏新区</a></li>
+        </ul>
+      </div>
+      <div class="choice">
+        <span>物业类型：</span>
+        <ul>
+          <li><a href="#">不限</a></li>
+          <li><a href="#">南山</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">福田</a></li>
+          <li><a href="#">大鹏新区</a></li>
+        </ul>
+      </div>
+      <div class="choice">
+        <span>销售状态：</span>
+        <ul>
+          <li><a href="#">不限</a></li>
+          <li><a href="#">在售</a></li>
+          <li><a href="#">代售</a></li>
+          <li><a href="#">售罄</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 房产列表 -->
+  <div class="estate-list">
+    <ul>
+      <li>
+        <a href="estate-detail.html">
+          <div class="estate-list-items clearfix">
+            <div class="estate-list-cover">
+              <img src="images/estate.png" alt="" class="img-responsive">
+            </div>
+            <div class="estate-list-brief">
+              <h3>奥城.广益城</h3>
+              <span class="hidden-xs">在售</span>
+              <p class="hidden-xs">
+                <span>开盘时间：</span><span>2015-11-29</span>
+              </p>
+              <p class="hidden-xs">
+                <span>咨询电话：</span><span>400-200-0668</span>
+              </p>
+              <p>
+                <span>主推户型：</span><span>69-148平</span>
+              </p>
+              <p>
+                <span>楼盘地址：</span><span>[龙华新区观澜]观澜</span>
+              </p>
+            </div>
+            <div class="estate-price">
+              均价<span>30000</span>元/平方米
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="estate-detail.html">
+          <div class="estate-list-items clearfix">
+            <div class="estate-list-cover">
+              <img src="images/estate.png" alt="" class="img-responsive">
+            </div>
+            <div class="estate-list-brief">
+              <h3>奥城.广益城</h3>
+              <span class="hidden-xs">在售</span>
+              <p class="hidden-xs">
+                <span>开盘时间：</span><span>2015-11-29</span>
+              </p>
+              <p class="hidden-xs">
+                <span>咨询电话：</span><span>400-200-0668</span>
+              </p>
+              <p>
+                <span>主推户型：</span><span>69-148平</span>
+              </p>
+              <p>
+                <span>楼盘地址：</span><span>[龙华新区观澜]观澜</span>
+              </p>
+            </div>
+            <div class="estate-price">
+              均价<span>30000</span>元/平方米
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="estate-detail.html">
+          <div class="estate-list-items clearfix">
+            <div class="estate-list-cover">
+              <img src="images/estate.png" alt="" class="img-responsive">
+            </div>
+            <div class="estate-list-brief">
+              <h3>奥城.广益城奥城.广益城奥城.广益城奥城.广益城奥城.广益城</h3>
+              <span class="hidden-xs">在售</span>
+              <p class="hidden-xs">
+                <span>开盘时间：</span><span>2015-11-29</span>
+              </p>
+              <p class="hidden-xs">
+                <span>咨询电话：</span><span>400-200-0668</span>
+              </p>
+              <p>
+                <span>主推户型：</span><span>69-148平</span>
+              </p>
+              <p>
+                <span>楼盘地址：</span><span>[龙华新区观澜]观澜</span>
+              </p>
+            </div>
+            <div class="estate-price">
+              均价<span>30000</span>元/平方米
+            </div>
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="estate-detail.html">
+          <div class="estate-list-items clearfix">
+            <div class="estate-list-cover">
+              <img src="images/estate.png" alt="" class="img-responsive">
+            </div>
+            <div class="estate-list-brief">
+              <h3>奥城.广益城</h3>
+              <span class="hidden-xs">在售</span>
+              <p class="hidden-xs">
+                <span>开盘时间：</span><span>2015-11-29</span>
+              </p>
+              <p class="hidden-xs">
+                <span>咨询电话：</span><span>400-200-0668</span>
+              </p>
+              <p>
+                <span>主推户型：</span><span>69-148平</span>
+              </p>
+              <p>
+                <span>楼盘地址：</span><span>[龙华新区观澜]观澜</span>
+              </p>
+            </div>
+            <div class="estate-price">
+              均价<span>30000</span>元/平方米
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- 分页按钮 -->
+</section>
+<footer>
+  <div class="line"></div>
+  <div class="authentication hidden-xs">
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_1.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_2.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_3.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_4.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_5.png" alt="" class="err-product">
+    </a>
+  </div>
+  <div class="totop clearfix ">
+    <p class="hidden-xs"><a href="help.html" target="_blank">关于我们</a></p>
+    <p class="hidden-xs"><a href="news.html" target="_blank">新闻中心</a></p>
+    <p><a href="help.html" target="_blank">帮助中心</a></p>
+    <p><a href="#" target="_blank">网站地图</a></p>
+    <p><a href="#" target="_blank">法律声明</a></p>
+    <p><a href="help.html" target="_blank">联系我们</a></p>
+  </div>  
+  <div class="links hidden-xs">
+    <p>
+      <span>公司地址：广东省深圳市宝安区西乡兴业路友情基地8f</span>
+      <span>电话：0755-33075352</span>
+    </p>
+    <p>
+      <span>Copyright © 2004-2015  金合治(深圳)科技有限公司版权所有</span>
+      <span>工商执照编号11010254636</span>
+    </p>
+    <p><span>粤ICP备：132523号-1，粤ICP证13523号</span></p>
+  </div>  
+  <div class="copyright text-center visible-xs">
+    <p>Copyright:©2015handyshow.com</p>
+  </div>
+</footer>
+
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/ie-emulation-modes-warning.js"></script>
+<!-- 对IE低版本的一个小技巧.禁止在IE模式下,直接本地文件浏览 -->
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+</body>
+</html>

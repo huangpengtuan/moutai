@@ -1,0 +1,42 @@
+@mixin .images-text{
+      border-bottom:1px solid rgba(191, 191, 191, 0.7);
+      padding: 15px 6px;
+      &:hover{
+        background-color: rgba(154, 154, 154, 0.11);
+        .estate-list-brief h3{
+          
+          color:$yellow;
+        }
+      }
+      .estate-list-cover{
+        float:left;
+        width:250px;
+      }
+      // 产品简介
+      .estate-list-brief{
+        float:left;
+        max-width:360px;
+        margin-left:15px;
+        overflow:hidden;
+        h3{
+          @extend .text-ellipsis;
+          margin:0;
+          max-width: 80%;
+          display:inline-block;
+          color:#060606
+        }
+        & > span{
+          margin-left:10px;
+          padding:3px 10px;
+          border-radius:3px;
+          display:inline-block;
+          background:#60A71D;
+          color:#fff;
+          float: right;
+        }
+        p{
+          margin:10px 0;
+          color:#616161;
+        }
+      }
+    }

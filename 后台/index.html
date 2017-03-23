@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html" />
+<!-- 指定以最新的IE版本模式来显示网页 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对360浏览器的内核调用,强制调用极速模式 -->
+<meta name="renderer" content="webkit" />
+<!--[if lt IE 10]>
+<meta name="renderer" content="ie-stand" />
+<![endif]-->
+<!--[if !IE]>
+<meta name="renderer" content="ie-stand" />
+<!<![endif]-->
+<!--[if lt IE 9]>
+      <script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<!-- 确保设备能正常显示响应式页面 -->
+<!-- 告诉webkit内核浏览器初始缩放比例为1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- 判断浏览器版本.IE8以下版本,bootstrap支持不了.加个提示 -->
+<!--[if IE]>      
+        <!--[if IE 6]>
+            <div class="ie"></div>
+        <![endif]-->
+  <!-- 判断浏览器版本IE6以下版本 -->
+  <!--[if lt IE 6]> 
+             <div class="ie"></div>
+        <![endif]-->
+  <!--[if IE 7]>
+             <div class="ie"></div>
+        <![endif]-->
+<![endif]-->
+<!-- 百度等搜索,会把description显示在搜索结果里面.这个地方非常总要.但要注意不要超过150字符 -->
+<meta name="description" content="百度等搜索,会把description显示在搜索结果里面.这个地方非常总要.但要注意不要超过150字符">
+<meta name="author" content="lijiancong,1430004183@qq.com"/>
+<meta name="copyright" content="globalexibit"/>
+<!-- 关于文档的关键字标签 -->
+<meta name="keywords" content="关于文档的关键字标">
+<title>后台添加活动</title>
+<!-- normalize -->
+<!-- <link href="css/normalize.css" rel="stylesheet"> -->
+<!-- bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- 项目css -->
+<link href="css/index.css" rel="stylesheet">
+</head>
+
+
+<body>
+<!-- 导航 -->
+<h1>活动</h1>
+<section class="add-activity clearfix">
+  <div class="progressbar" id="progressbar">
+    <div class="top-bar">
+      <div class="completeDetail">
+        <div>活动编辑指南<span></span></div>
+        
+      </div>
+      <div class="store-draft">
+        <a href="#">保存</a>
+      </div>
+      <div class="preview">
+        <div>
+          <p>预览</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="maincnt" id="maincnt">
+  <!-- 题图 -->
+    <!-- 锚点目标 -->
+    <div class="aim">
+      <a name="aim_1"></a>
+    </div>
+    <div class="cover-box" style="background-image:url(images/page_bg.jpg)">
+
+      <div class="set-page-cover">
+        <div class="text">
+          <div id="afileupload1"><input type="file" name="uploadify1" id="uploadify1" />
+          </div>
+        
+          <h2>添加活动头图</h2>
+          <p>图片建议选择尺寸大于1320px的高清大图</p>
+        </div>        
+      </div>
+    </div>
+    <!-- 编辑区 -->
+    <div class="content-area clearfix">
+      <div class="content-box">
+        <div class="edit-box">
+          <!-- 锚点目标 -->
+          <div class="aim">
+            <a name="aim_2"></a>
+          </div>
+          <div class="edit-title clearfix">
+            <p class="title"><input  class="title-input" type="text" value="活动摘要"></p>
+            <p class="re-edit"></p>
+          </div>
+          <div class="edit-bar" id="edit-bar">
+            <span></span>
+            <span>添加文字</span>
+          </div>
+          <p class="contents">内容内容内容内容内容内容内容内容</p>
+          <div class="text-box">
+
+            <textarea name="" id="" cols="30" rows="10">              
+            </textarea>
+            <div class="art-btn clearfix">
+              
+              <span class="art-save">保存</span>
+              <span class="cancle-save">取消</span>
+            </div>
+          </div>
+        </div>
+        <div class="edit-box">
+          <!-- 锚点目标 -->
+          <div class="aim">
+            <a name="aim_3"></a>
+          </div>
+          <div class="edit-title clearfix">
+            <p class="title"><span>*</span><input  class="title-input" type="text" value="主要内容"></p>
+            <p class="re-edit"></p>
+          </div>
+          <div class="edit-bar">
+            <span></span>
+            <span>添加文字</span>
+          </div>
+          <p class="contents">内容内容内容内容内容内容内容内容</p>
+          <div class="text-box">
+            <textarea cols="30" rows="10">
+              
+            </textarea>
+            <div class="art-btn clearfix">
+              
+              <span class="art-save">保存</span>
+              <span class="cancle-save">取消</span>
+            </div>
+          </div>
+        </div>
+        <div class="edit-box">
+          <!-- 锚点目标 -->
+          <div class="aim">
+            <a name="aim_4"></a>
+          </div>
+          <div class="edit-title clearfix">
+            <p class="title"><input  class="title-input" type="text" value="活动图片"></p>
+            <p class="re-edit"></p>
+          </div>
+          <div class="edit-bar">
+            <span class="edit-imgicon"></span>
+            <span>添加图片</span>
+          </div>
+          <p class="contents" id="staticPics">
+            <span>
+              <img src="images/remove_pic.png" class="remove-pic" title="删除图片">
+              <img src="images/product_8.jpg" alt=""><br>
+            </span>
+            <span>
+              <img src="images/remove_pic.png" class="remove-pic" title="删除图片">
+              <img src="images/product_8.jpg" alt=""><br>
+            </span>
+            <span>
+              <img src="images/remove_pic.png" class="remove-pic" title="删除图片">
+              <img src="images/product_8.jpg" alt=""><br>
+            </span>
+            <span>
+              <img src="images/remove_pic.png" class="remove-pic" title="删除图片">
+              <img src="images/product_8.jpg" alt=""><br>
+            </span>
+          </p>
+          <div class="text-box">
+            <textarea name="" id="" cols="30" rows="10">
+              
+            </textarea>
+            <div class="art-btn clearfix">
+              
+              <span class="art-save">保存</span>
+              <span class="cancle-save">取消</span>
+            </div>
+          </div>
+        </div>
+        <div class="edit-box">
+          <!-- 锚点目标 -->
+          <div class="aim">
+            <a name="aim_5"></a>
+          </div>
+          <div class="edit-title clearfix">
+            <p class="title"><span>*</span><input  class="title-input" type="text" value="活动时间"></p>
+            <p class="re-edit"></p>
+          </div>
+          <div class="edit-bar">
+            <span></span>
+            <span>添加文字</span>
+          </div>
+          <p class="contents">内容内容内容内容内容内容内容内容</p>
+                    
+          <div class="text-box">
+            <textarea name="" id="" cols="30" rows="10">
+              
+            </textarea>
+            <div class="art-btn clearfix">
+              
+              <span class="art-save">保存</span>
+              <span class="cancle-save">取消</span>
+            </div>
+          </div>
+        </div>
+        <div class="edit-box">
+          <!-- 锚点目标 -->
+          <div class="aim">
+            <a name="aim_6"></a>
+          </div>
+          <div class="edit-title clearfix">
+            <p class="title"><input  class="title-input" type="text" value="活动地点"></p>
+            <p class="re-edit"></p>
+          </div>
+          <div class="edit-bar">
+            <span></span>            
+            <span>添加文字</span>
+            <span class="addr"></span>
+            <span>地图标记</span>
+          </div>
+          <p class="contents">内容内容内容内容内容内容内容内容</p>
+          <div class="text-box">
+            <textarea name="" id="" cols="30" rows="10">
+              
+            </textarea>
+            <div class="art-btn clearfix">
+              
+              <span class="art-save">保存</span>
+              <span class="cancle-save">取消</span>
+            </div>
+          </div>
+        </div>
+        <div class="edit-box">
+          <!-- 锚点目标 -->
+          <div class="aim">
+            <a name="aim_7"></a>
+          </div>
+          <div class="edit-title clearfix">
+            <p class="title"><input  class="title-input" type="text" value="产品介绍"></p>
+            <p class="re-edit"></p>
+          </div>
+          <div class="edit-bar">
+            <span></span>
+            <span>添加文字</span>
+          </div>
+          <p class="contents">内容内容内容内容内容内容内容内容</p>
+          <div class="text-box">
+            <textarea name="" id="" cols="30" rows="10">
+              
+            </textarea>
+            <div class="art-btn clearfix">
+              
+              <span class="art-save">保存</span>
+              <span class="cancle-save">取消</span>
+            </div>
+          </div>
+        </div>
+      </div>     
+    </div>
+  </div>
+  <!-- 进度弹框 -->
+  <div class="layer-content">
+    <div class="layer-dialog">
+      <p class="layer-close"></p>
+      <ul>
+        <!-- <li>
+          <span class="num">1</span>
+          <span class="name">创建新活动</span>
+          <span class="progre">已完成</span>
+        </li> -->
+        <li>
+          <span class="num">1</span>
+          <span class="name">添加活动头图</span>
+          <a href="#aim_1"><span class="progre progre-go">前往</span></a>
+        </li>
+        <li>
+          <span class="num">2</span>
+          <span class="name">添加活动摘要</span>
+          <a href="#aim_2"><span class="progre progre-go">前往</span></a>
+        </li>
+        <li>
+          <span class="num">3</span>
+          <span class="name">添加主要内容</span>
+          <a href="#aim_3"><span class="progre progre-go">前往</span></a>
+        </li>
+        <li>
+          <span class="num">4</span>
+          <span class="name">添加活动图片</span>
+          <a href="#aim_4"><span class="progre progre-go">前往</span></a>
+        </li>
+        <li>
+          <span class="num">5</span>
+          <span class="name">添加活动时间</span>
+          <a href="#aim_5"><span class="progre progre-go">前往</span></a>
+        </li>
+        <li>
+          <span class="num">6</span>
+          <span class="name">添加活动地点</span>
+          <a href="#aim_6"><span class="progre progre-go">前往</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/ie-emulation-modes-warning.js"></script>
+<!-- 对IE低版本的一个小技巧.禁止在IE模式下,直接本地文件浏览 -->
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+</body>
+</html>

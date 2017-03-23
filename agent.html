@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html" />
+<!-- 指定以最新的IE版本模式来显示网页 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- 针对360浏览器的内核调用,强制调用极速模式 -->
+<meta name="renderer" content="webkit" />
+<!--[if lt IE 10]>
+<meta name="renderer" content="ie-stand" />
+<![endif]-->
+<!--[if !IE]>
+<meta name="renderer" content="ie-stand" />
+<!<![endif]-->
+<!--[if lt IE 9]>
+      <script language="javascript" type="text/javascript" src="js/html5shiv.js"></script>
+<![endif]-->
+<!-- 确保设备能正常显示响应式页面 -->
+<!-- 告诉webkit内核浏览器初始缩放比例为1 -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<!-- 判断浏览器版本.IE8以下版本,bootstrap支持不了.加个提示 -->
+<!--[if IE]>      
+        <!--[if IE 6]>
+            <div class="ie"></div>
+        <![endif]-->
+  <!-- 判断浏览器版本IE6以下版本 -->
+  <!--[if lt IE 6]> 
+             <div class="ie"></div>
+        <![endif]-->
+  <!--[if IE 7]>
+             <div class="ie"></div>
+        <![endif]-->
+<![endif]-->
+<!-- 百度等搜索,会把description显示在搜索结果里面.这个地方非常总要.但要注意不要超过150字符 -->
+<meta name="description" content="百度等搜索,会把description显示在搜索结果里面.这个地方非常总要.但要注意不要超过150字符">
+<meta name="author" content="lijiancong,1430004183@qq.com"/>
+<meta name="copyright" content="globalexibit"/>
+<!-- 关于文档的关键字标签 -->
+<meta name="keywords" content="关于文档的关键字标">
+<title>地区运营商</title>
+<!-- normalize -->
+<!-- <link href="css/normalize.css" rel="stylesheet"> -->
+<!-- bootstrap -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<!-- 更换第三方图标库,Font Awesome <i class="fa fa-medium">-->
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<!-- 项目css -->
+<link href="css/index.css" rel="stylesheet">
+</head>
+
+
+<body onload="init()">
+<!-- 顶部logo，搜索区 -->
+<header class="agent-cont clearfix">
+  <div class="head center-block clearfix">
+    <div class="logo">
+      <a href="index.html">
+        <img src="images/logo.png" alt="" class="hidden-xs">
+        <img src="images/logo_2.png" alt="" class="visible-xs">
+      </a>
+    </div>
+    <div class="area btn-group hidden-xs">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        全国 <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+    <div class="search-box">
+      <input type="text" class="keywords">
+      <button class="search-btn">
+        <span class="hidden-xs">搜索</span>
+        <img src="images/search.png" class="img-responsive visible-xs" alt="">
+      </button>
+    </div>
+    <div class="scanner-phone hidden-xs">
+      <img src="images/scanner.png" alt="">
+      <p>手机逛茅台</p>
+    </div>
+     
+  </div>
+  <div class="line"></div>
+</header>
+<!-- 导航地区运营商 -->
+<section class="agent-cont clearfix">
+
+  <!-- 手机端地区运营商选择 -->
+  <form action="<#ZC_BLOG_HOST#>" method="post" name="creator" enctype="multipart/form-data" class="visible-xs">
+    <select name="province" onChange = "select()"></select>
+    <select name="city" onChange = "select()"></select>
+  </form>
+  <!-- pc端地区运营商 -->
+  <div class="agent-place clearfix hidden-xs">
+    <div class="palce-select">
+    <p>地区选择</p>
+      <ul>
+        <li class="active place"><a href="#">北京</a></li>
+        <li class="place"><a href="#">天津</a></li>
+        <li class="place"><a href="#">河北省</a></li>
+        <li class="place"><a href="#">山西省</a></li>
+        <li class="place"><a href="#">内蒙古</a></li>
+        <li class="place"><a href="#">吉林省</a></li>
+        <li class="place"><a href="#">辽宁省</a></li>
+        <li class="active place"><a href="#">北京</a></li>
+        <li class="place"><a href="#">天津</a></li>
+        <li class="place"><a href="#">河北省</a></li>
+        <li class="place"><a href="#">山西省</a></li>
+        <li class="place"><a href="#">内蒙古</a></li>
+        <li class="place"><a href="#">吉林省</a></li>
+        <li class="place"><a href="#">辽宁省</a></li>
+        <li class="active place"><a href="#">北京</a></li>
+        <li class="place"><a href="#">天津</a></li>
+        <li class="place"><a href="#">河北省</a></li>
+        <li class="place"><a href="#">山西省</a></li>
+        <li class="place"><a href="#">内蒙古</a></li>
+        <li class="place"><a href="#">吉林省</a></li>
+        <li class="place"><a href="#">辽宁省</a></li>
+        <li class="active place"><a href="#">北京</a></li>
+        <li class="place"><a href="#">天津</a></li>
+        <li class="place"><a href="#">河北省</a></li>
+        <li class="place"><a href="#">山西省</a></li>
+        <li class="place"><a href="#">内蒙古</a></li>
+        <li class="place"><a href="#">吉林省</a></li>
+        <li class="place"><a href="#">辽宁省</a></li>
+        <li class="active place"><a href="#">北京</a></li>
+        <li class="place"><a href="#">天津</a></li>
+        <li class="place"><a href="#">河北省</a></li>
+        <li class="place"><a href="#">山西省</a></li>
+        <li class="place"><a href="#">内蒙古</a></li>
+        <li class="place"><a href="#">吉林省</a></li>
+
+        
+      </ul>
+    </div>
+  </div>
+  <!-- 地区运营商 -->
+  <div id="agentList">
+    <div class="agent clearfix">
+      <p class="content-title">
+        <span></span>贵州
+      </p>
+      <div class="line"></div>
+      <div class="agent-list clearfix">
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_1.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_2.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_3.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_4.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+    <div class="agent clearfix">
+      <p class="content-title">
+        <span></span>广东
+      </p>
+      <div class="line"></div>
+      <div class="agent-list clearfix">
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_1.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_2.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_3.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_4.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+      </div>
+      
+    </div>
+    <div class="agent clearfix">
+      <p class="content-title">
+        <span></span>江西
+      </p>
+      <div class="line"></div>
+      <div class="agent-list clearfix">
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_1.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_2.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_3.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="agent-box clearfix col-xs-6">
+            <img class="agent-cover" src="images/agent_4.jpg" alt="">
+            
+            <div class="agent-name">贵州地区运营商</div>
+          </div>
+        </a>
+      </div>
+      
+    </div> 
+  </div>
+  
+</section>
+<footer>
+  <div class="line"></div>
+  <div class="authentication hidden-xs">
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_1.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_2.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_3.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_4.png" alt="" class="err-product">
+    </a>
+    <a href="#" class="urlknet">
+      <img src="images/urlknet_5.png" alt="" class="err-product">
+    </a>
+  </div>
+  <div class="totop clearfix ">
+    <p class="hidden-xs"><a href="help.html" target="_blank">关于我们</a></p>
+    <p class="hidden-xs"><a href="news.html" target="_blank">新闻中心</a></p>
+    <p><a href="help.html" target="_blank">帮助中心</a></p>
+    <p><a href="#" target="_blank">网站地图</a></p>
+    <p><a href="#" target="_blank">法律声明</a></p>
+    <p><a href="help.html" target="_blank">联系我们</a></p>
+  </div>  
+  <div class="links hidden-xs">
+    <p>
+      <span>公司地址：广东省深圳市宝安区西乡兴业路友情基地8f</span>
+      <span>电话：0755-33075352</span>
+    </p>
+    <p>
+      <span>Copyright © 2004-2015  金合治(深圳)科技有限公司版权所有</span>
+      <span>工商执照编号11010254636</span>
+    </p>
+    <p><span>粤ICP备：132523号-1，粤ICP证13523号</span></p>
+  </div>  
+  <div class="copyright text-center visible-xs">
+    <p>Copyright:©2015handyshow.com</p>
+  </div>
+</footer>
+
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
+<script language="javascript">
+    var where = new Array(35);
+    function comefrom(loca,locacity) { this.loca = loca; this.locacity = locacity; }
+    where[0]= new comefrom("选择省份","选择城市");
+    where[1] = new comefrom("北京","|东城|西城|崇文|宣武|朝阳|丰台|石景山|海淀|门头沟|房山|通州|顺义|昌平|大兴|平谷|怀柔|密云|延庆");  
+    where[2] = new comefrom("上海","|黄浦|卢湾|徐汇|长宁|静安|普陀|闸北|虹口|杨浦|闵行|宝山|嘉定|浦东|金山|松江|青浦|南汇|奉贤|崇明");
+    where[3] = new comefrom("天津","|和平|东丽|河东|西青|河西|津南|南开|北辰|河北|武清|红挢|塘沽|汉沽|大港|宁河|静海|宝坻|蓟县");
+    where[4] = new comefrom("重庆","|万州|涪陵|渝中|大渡口|江北|沙坪坝|九龙坡|南岸|北碚|万盛|双挢|渝北|巴南|黔江|长寿|綦江|潼南|铜梁|大足|荣昌|壁山|梁平|城口|丰都|垫江|武隆|忠县|开县|云阳|奉节|巫山|巫溪|石柱|秀山|酉阳|彭水|江津|合川|永川|南川");
+    where[5] = new comefrom("河北","|石家庄|邯郸|邢台|保定|张家口|承德|廊坊|唐山|秦皇岛|沧州|衡水");
+    where[6] = new comefrom("山西","|太原|大同|阳泉|长治|晋城|朔州|吕梁|忻州|晋中|临汾|运城");
+    where[7] = new comefrom("内蒙古","|呼和浩特|包头|乌海|赤峰|呼伦贝尔盟|阿拉善盟|哲里木盟|兴安盟|乌兰察布盟|锡林郭勒盟|巴彦淖尔盟|伊克昭盟");
+    where[8] = new comefrom("辽宁","|沈阳|大连|鞍山|抚顺|本溪|丹东|锦州|营口|阜新|辽阳|盘锦|铁岭|朝阳|葫芦岛");
+    where[9] = new comefrom("吉林","|长春|吉林|四平|辽源|通化|白山|松原|白城|延边");
+    where[10] = new comefrom("黑龙江","|哈尔滨|齐齐哈尔|牡丹江|佳木斯|大庆|绥化|鹤岗|鸡西|黑河|双鸭山|伊春|七台河|大兴安岭");
+    where[11] = new comefrom("江苏","|南京|镇江|苏州|南通|扬州|盐城|徐州|连云港|常州|无锡|宿迁|泰州|淮安");
+    where[12] = new comefrom("浙江","|杭州|宁波|温州|嘉兴|湖州|绍兴|金华|衢州|舟山|台州|丽水");
+    where[13] = new comefrom("安徽","|合肥|芜湖|蚌埠|马鞍山|淮北|铜陵|安庆|黄山|滁州|宿州|池州|淮南|巢湖|阜阳|六安|宣城|亳州");
+    where[14] = new comefrom("福建","|福州|厦门|莆田|三明|泉州|漳州|南平|龙岩|宁德");
+    where[15] = new comefrom("江西","|南昌市|景德镇|九江|鹰潭|萍乡|新馀|赣州|吉安|宜春|抚州|上饶");
+    where[16] = new comefrom("山东","|济南|青岛|淄博|枣庄|东营|烟台|潍坊|济宁|泰安|威海|日照|莱芜|临沂|德州|聊城|滨州|菏泽");
+    where[17] = new comefrom("河南","|郑州|开封|洛阳|平顶山|安阳|鹤壁|新乡|焦作|濮阳|许昌|漯河|三门峡|南阳|商丘|信阳|周口|驻马店|济源");
+    where[18] = new comefrom("湖北","|武汉|宜昌|荆州|襄樊|黄石|荆门|黄冈|十堰|恩施|潜江|天门|仙桃|随州|咸宁|孝感|鄂州");
+    where[19] = new comefrom("湖南","|长沙|常德|株洲|湘潭|衡阳|岳阳|邵阳|益阳|娄底|怀化|郴州|永州|湘西|张家界");
+    where[20] = new comefrom("广东","|广州|深圳|珠海|汕头|东莞|中山|佛山|韶关|江门|湛江|茂名|肇庆|惠州|梅州|汕尾|河源|阳江|清远|潮州|揭阳|云浮");
+    where[21] = new comefrom("广西","|南宁|柳州|桂林|梧州|北海|防城港|钦州|贵港|玉林|南宁地区|柳州地区|贺州|百色|河池");
+    where[22] = new comefrom("海南","|海口|三亚");
+    where[23] = new comefrom("四川","|成都|绵阳|德阳|自贡|攀枝花|广元|内江|乐山|南充|宜宾|广安|达川|雅安|眉山|甘孜|凉山|泸州");
+    where[24] = new comefrom("贵州","|贵阳|六盘水|遵义|安顺|铜仁|黔西南|毕节|黔东南|黔南");
+    where[25] = new comefrom("云南","|昆明|大理|曲靖|玉溪|昭通|楚雄|红河|文山|思茅|西双版纳|保山|德宏|丽江|怒江|迪庆|临沧");
+    where[26] = new comefrom("西藏","|拉萨|日喀则|山南|林芝|昌都|阿里|那曲");
+    where[27] = new comefrom("陕西","|西安|宝鸡|咸阳|铜川|渭南|延安|榆林|汉中|安康|商洛");
+    where[28] = new comefrom("甘肃","|兰州|嘉峪关|金昌|白银|天水|酒泉|张掖|武威|定西|陇南|平凉|庆阳|临夏|甘南");
+    where[29] = new comefrom("宁夏","|银川|石嘴山|吴忠|固原");
+    where[30] = new comefrom("青海","|西宁|海东|海南|海北|黄南|玉树|果洛|海西");
+    where[31] = new comefrom("新疆","|乌鲁木齐|石河子|克拉玛依|伊犁|巴音郭勒|昌吉|克孜勒苏柯尔克孜|博尔塔拉|吐鲁番|哈密|喀什|和田|阿克苏");
+    where[32] = new comefrom("香港","");
+    where[33] = new comefrom("澳门","");
+    where[34] = new comefrom("台湾","|台北|高雄|台中|台南|屏东|南投|云林|新竹|彰化|苗栗|嘉义|花莲|桃园|宜兰|基隆|台东|金门|马祖|澎湖");
+    where[35] = new comefrom("其它","|北美洲|南美洲|亚洲|非洲|欧洲|大洋洲");
+    function select() {
+    with(document.creator.province) { var loca2 = options[selectedIndex].value; }
+    for(i = 0;i < where.length;i ++) {
+    if (where[i].loca == loca2) {
+    loca3 = (where[i].locacity).split("|");
+    for(j = 0;j < loca3.length;j++) { with(document.creator.city) { length = loca3.length; options[j].text = loca3[j]; options[j].value = loca3[j]; var loca4=options[selectedIndex].value;}}
+    break;
+    }}
+    } 
+    function init() {
+    with(document.creator.province) {
+    length = where.length;
+    for(k=0;k<where.length;k++) { options[k].text = where[k].loca; options[k].value = where[k].loca; }
+    options[selectedIndex].text = where[0].loca; options[selectedIndex].value = where[0].loca;
+    }
+    with(document.creator.city) {
+    loca3 = (where[0].locacity).split("|");
+    length = loca3.length;
+    for(l=0;l<length;l++) { options[l].text = loca3[l]; options[l].value = loca3[l]; }
+    options[selectedIndex].text = loca3[0]; options[selectedIndex].value = loca3[0];
+    }} 
+</script>
+<!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/ie-emulation-modes-warning.js"></script>
+<!-- 对IE低版本的一个小技巧.禁止在IE模式下,直接本地文件浏览 -->
+<!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+</body>
+</html>
